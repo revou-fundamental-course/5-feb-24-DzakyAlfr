@@ -6,17 +6,26 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: rgb(196, 215, 255);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
 }
 
 #navigation-bar {
-    display: flex;
-    justify-content: space-between;
+    background-color: #727cf5;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px #727cf5;
 }
 
 #logo {
     height: min-content;
-    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: white;
+    font-family: sans-serif;
 }
 
 #locate {
