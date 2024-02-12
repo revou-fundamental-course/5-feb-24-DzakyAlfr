@@ -73,6 +73,16 @@ header {
     padding-bottom: 8px;
 }
 
+.input-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 8px;
+}
+
 .input-field {
     border: 2px solid lightblue;
     width: 250px;
@@ -86,6 +96,7 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .input-field:focus {
     border: 2px solid rgb(77, 77, 161);
@@ -115,6 +126,52 @@ header {
 }
 
 .my-button:active {
+    background-color: #e4a424;
+    transform: translateY(3px);
+    box-shadow: 0 0 0;
+}
+
+.my-button1 {
+    background-color: #f9c750;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #dfa229;
+    width: 250px;
+    margin: 3px;
+}
+
+.my-button1:hover {
+    background-color: #f8b32d;
+    box-shadow: 0 3px 0 #cf9727;
+}
+
+.my-button1:active {
+    background-color: #e4a424;
+    transform: translateY(3px);
+    box-shadow: 0 0 0;
+}
+
+.my-button2 {
+    background-color: #f9c750;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #dfa229;
+    width: 250px;
+    margin: 3px;
+}
+
+.my-button2:hover {
+    background-color: #f8b32d;
+    box-shadow: 0 3px 0 #cf9727;
+}
+
+.my-button2:active {
     background-color: #e4a424;
     transform: translateY(3px);
     box-shadow: 0 0 0;
