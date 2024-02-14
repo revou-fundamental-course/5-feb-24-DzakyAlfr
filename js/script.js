@@ -2,6 +2,7 @@ let celciusInput = document.getElementsByClassName
 ("input-field")[0]
 let fahrenheitInput = document.getElementsByClassName
 ("input-field1")[0]
+let btnHasil = document.getElementById("hasilButton")[0]
 
 celciusInput.addEventListener('input',function(){
     let celciusValue = (parseFloat(celciusInput.value) * 9/5)
@@ -19,6 +20,13 @@ fahrenheitInput.addEventListener('input',function(){
     celciusInput.innerText = fahrenheitValue
 
 })
+
+btnHasil.addEventListener('click', ()=>{
+    celciusInput.value = ""
+    fahrenheitInput.value = ""
+
+})
+
 // function celToFar(){
 //     let output = (parseFloat(celciusInput.value) * 9/5) + 32;
 //     fahrenheitInput.value = parseFloat(output.toFixed(2));
