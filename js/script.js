@@ -4,6 +4,7 @@ let fahrenheitInput = document.getElementsByClassName
 ("input-field1")[0]
 var btnHasil = document.getElementById("hasilButton");
 var btnRumus = document.getElementById("konversi");
+var hasil = document.getElementById("textHasil")
 
 celciusInput.addEventListener('input',function(){
     let celciusValue = (parseFloat(celciusInput.value) * 9/5)
@@ -14,8 +15,8 @@ celciusInput.addEventListener('input',function(){
 })
 
 fahrenheitInput.addEventListener('input',function(){
-    let fahrenheitValue = (parseFloat(fahrenheitInput.value) - 32)
-    * 5/9;
+    let fahrenheitValue = (parseFloat(fahrenheitInput.value)
+    - 32)* 5/9;
     //const celciusValue = celciusInput.value
     celciusInput.value = parseFloat(fahrenheitValue.toFixed(2));
     celciusInput.innerText = fahrenheitValue
@@ -25,10 +26,13 @@ fahrenheitInput.addEventListener('input',function(){
 btnHasil.addEventListener('click',function(){
     celciusInput.value = ""
     fahrenheitInput.value = ""
+    hasil.textContent = ""
 })
 
 btnRumus.addEventListener('click',function(){
-    console.log("(",celciusInput.value, "x 9/5 ) + 32 =", fahrenheitInput.value)
+    var hasilAkhir = ("(",celciusInput.value, "x 9/5 ) + 32 =", 
+    fahrenheitInput.value)
+    hasil.textContent = hasilAkhir;
 })
 
 // function celToFar(){
